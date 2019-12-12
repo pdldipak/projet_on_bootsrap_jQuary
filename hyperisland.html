@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <title>2021 Graduation Party</title>
+
+   <link  type="text/css" rel="stylesheet"  href="css/bootstrap.min.css" />    
+   <link  type="text/css" rel="stylesheet"  href="css/style.css" />    
+   <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" type="text/css" rel="stylesheet" /> 
+    <link  href="css/my_countdownhyper.css" rel="stylesheet">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/jquery.plugin.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+		
+   
+</head>
+	
+<body style="background-image: url(images/hyper.jpg)">
+
+    <div class="navbar navbar-default navbar-fixed-top" style="background-color: rgb(205, 241, 207)">    
+                <div class="container">        
+                    <div class="navbar-header">        
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">  Menu      
+                          </button>     
+                     <a href="index.html" class="navbar-brand"> <b>Dipak</b></a>        
+                    </div>
+                    
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="favorite.html"><b> Interest</b></a></li>        
+                            <li><a href="cv.html"><b> CV</b></a></li>  
+                            <li><a href="blog.html"><b> Blog</b></a></li>
+                            <li><a href="hyperisland.html"><b> Graduation</b></a></li>
+                        </ul>
+                    </div>           
+                </div>
+    </div>
+              <!--  Complete Top Fixed Navigation bar -->
+
+<div class="container"> 
+    <div class="row">
+      <div class="col-md-12">
+        <div id="showcase">
+          <div class="heading">		  
+             <h1>Graduation Countdown</h1>		
+                <h2><b>Front End Developer program</b></h2>
+    	  
+          </div>	  
+		 
+                 <div class="my-countdown"></div>
+   
+          </div>
+       </div>
+    </div>
+ </div>
+
+  <script>
+      $(document).ready(function(){
+      var graduationYear = new Date(); 
+      graduationYear = new Date(graduationYear.getFullYear() + 2, 3, 2); 
+      $('.my-countdown').countdown({until: graduationYear}); 
+
+      });
+ </script>
+
+
+</body>
+</html>
